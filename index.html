@@ -4,72 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celimpilo's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <img src="image/logo.png" width="60px">
-           <h4>Celimpilo's Portfolio</h4>
-           <br>
-           <a href="#home">Home</a>
-           <a href="#aboutme">About Me</a>
-           <a href="#projects">My Projects</a>
-           <a href="#contactme">Contact Me</a> 
+            <h2>Celimpilo's Portfolio</h2>
+            <br>
+            <ul class="nav-links">
+                <li>
+                    <a href="#aboutme">About Me</a>
+                </li>
+                <li>
+                    <a href="#projects">My Projects</a> 
+                </li>
+                <li>
+                    <a href="#contactme">Contact Me</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">
+                        Quick Links
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="www.linkedin.com/in/celimpilo-mbatha-692878376">LinkedIn</a></li>
+                        <li><a href="https://github.com/Mpilo3">Github</a></li>
+                    </ul>
+                    <li class="hamburger" id="hamburger-btn">
+                    ☰
+                </li>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
         <h3>About Me</h3>
-        <img src="image/Linked-Profile.png" width="200px">
-
         <section id="aboutme">
-            <p> 
-                <strong>I</strong> have currently finished my qualification degree in the Bachelor of Commerce department, Management Information Systems.
-                The instituition I currently studied in one of the best in Kwa-Zulu Natal varsities, the University of Zululand.
-                I have studied the likes of <strong>Python, Visual Basic(VB), Databases(MySQL), Javascript, Data Modeling(Unified Modeling Language)</strong>, interesting fact I am a self taught <strong>HTML</strong>, and a bit <strong>CSS</strong> language.
-                I am stil carrying with fullfiling my coding experience, still yet to learn languages frameworks.
-            </p>
-        </section> 
+            <div class="cont-about">
+            <div class="prof-Soc-Icon">
+                <div>
+                    <img src="image/Linked-Profile.png" class="profile-pic" height="250px">
+                </div>
+            
+                <div class="icon">
+                    <a href="www.linkedin.com/in/celimpilo-mbatha-692878376">
+                        <img src="image/linkedin-icon-3.svg" height="20px" alt="LinkedIn Profile." title="LinkedIn">
+                    </a>
+                    <a href="mailto:celimpilomabtha001@gamil.com">
+                        <img src="image/gmail-icon.png" height="20px" alt="Email me." title="Email">
+                    </a>
+                    <a href="https://github.com/Mpilo3">
+                        <img src="image/github-icon.png" height="20px" alt="Github Profile" title="Github">
+                    </a>
+                </div>
+            </div>
+            <div class="summary-cont">
+                <p> 
+                    <strong>I</strong> have currently finished my qualification degree in the Bachelor of Commerce department, Management Information Systems.
+                    The instituition I currently studied in one of the best in Kwa-Zulu Natal varsities, the University of Zululand.
+                    I have studied the likes of <strong>Python, Visual Basic(VB), Databases(MySQL), Javascript, Data Modeling(Unified Modeling Language)</strong>, interesting fact I am a self taught <strong>HTML</strong>, and a bit <strong>CSS</strong> language.
+                    I am stil carrying with fullfiling my coding experience, still yet to learn languages frameworks.
+                </p>
+            </div>
+        </section>
+        <br>
+        <h3>The Languages and Experience</h3>
+        <div class="wrapper-cont">
+            <div class="lang-containers">
+                <div class="container">
+                    <strong> Python.</strong><br>
+                    <img class="image" id="image1" src="image/Python.jpg"><br>
+                    <label for="exp">Experience:</label><br>
+                    <input type="range" id="exp" name="Pyexp" disabled value="40" title="40%"><br>
+                </div>
+                <div class="container">
+                    <strong>Databases, MySQL.</strong><br>
+                    <img class="image" id="image2" src="image/Database.jpg"><br>
+                    <label for="exp">Experience:</label><br>
+                    <input type="range" id="exp" name="DBexp" title="56%" value="56" disabled><br>
+                </div>
+                <div class="container">
+                    <strong>Microsoft Visio, (UML) Design & Analysis.</strong><br>
+                    <img class="image" id="img3" src="image/Microsoft_Visio.png"><br>
+                    <label for="exp">Experience:</label><br>
+                    <input type="range" id="exp" name="MicroVisexp" value="70" title="70%" disabled><br>
+                </div>
+                <div class="container">
+                    <strong>Visual Basic(VB)</strong><br>
+                    <img class="image" id="image4" src="image/VB.jpg"><br>
+                    <label for="exp">Experience:</label><br>
+                    <input type="range" id="exp" name="VBexp" value="72" title="72%" disabled><br>
+                </div>
+                <div class="container">
+                    <strong> Hypertext Markup Language(HTML.)</strong> <br>
+                    <img class="image" id="image5" src="image/HTML.jpg"><br>
+                    <label for="exp">Experience:</label><br>
+                    <input type="range" id="exp" name="DBexp" value="60" title="60%" disabled><br>
+                </div>
+            
+                <div class="container">
+                    <strong>Cascading Style Sheets(CSS).</strong>  <br>
+                    <img class="image" id="image6" src="image/CSS.jpg"><br>
+                    <label for="exp">Experience:</label><br>
+                    <input type="range" id="exp" name="DBexp" value="50" title="50%" disabled><br>
+                </div>
+
+                <div class="container"> 
+                    <strong>Javascript.</strong> <br>
+                    <img class="image" id="image6" src="image/Javascript.jpg"><br>
+                    <label for="exp">Experience:</label><br>
+                    <input type="range" id="exp" name="DBexp" value="40" title="40%" disabled><br>
+                </div>
+            </div>
+        </div>
         <section id="projects">
-            <h3>Projects</h3>
-            <p>
-                The Proejects I am working on will appear here..... <br>
-                <h5>Loading....</h5>
-            </p>
+            <div class="projects">
+                <h3>Projects</h3>
+                <p>
+                    The Proejects I am working on will appear here..... <br>
+                    <h5>Loading....</h5>
+                </p>
+            </div>
         </section>
         <section id="contactme">
             <h3>Wanna get in contact?</h3><br>
            <form>
-             <label for="username">Name:</label><br>
-            <input type="text" id="name" placeholder="e.g Celimpilo" minlength="10" required><br>
-            <label for="username">Surname:</label><br>
-            <input type="text" id="surname" placeholder="e.g Mbatha" minlength="15" required><br>
-            <label for="username">Email:</label><br>
-            <input type="email" id="email" placeholder="e.g MpiloMbatha@gamil.com"><br>
-            <label for="username">Phone:</label><br>
-            <input type="tel" id="phone" placeholder="e.g (+27)82 489 9012" ><br>
-            <button id="btnsnd">Send Message</button>
+                <label for="username">Name:</label><br>
+                <input type="text" id="name" placeholder="e.g Celimpilo" minlength="10" required><br>
+                <label for="username">Surname:</label><br>
+                <input type="text" id="surname" placeholder="e.g Mbatha" minlength="15" required><br>
+                <label for="username">Email:</label><br>
+                <input type="email" id="email" placeholder="e.g MpiloMbatha@gamil.com"><br>
+                <label for="username">Phone:</label><br>
+                <input type="tel" id="phone" placeholder="e.g (+27)82 489 9012" ><br>
+                <button id="btnsnd">Send Message</button>
            </form>
         </section>
     </main>
     <hr>
     <footer>
-        <div class="address">
-            <p>
-                Get us here<br>
-                Siyakhula road<br>
-                Mandeni<br>
-                Sundumbili<br>
-                4490<br>
-            </p>
+        <div class="footer">
+            <div class="footer-content">
+                <h4>Get us here</h4>
+                <small>
+                    Siyakhula road<br>
+                    Mandeni<br>
+                    Sundumbili<br>
+                    4490<br>
+                </small>
+            </div>
+            <div class="footer-content">
+                <h4>Contact Me</h4>
+                    <small><a href="mailto:celimpilomabtha001@gamil.com">
+                    <img src="image/gmail-icon.png" width="10" height="10">
+                    celimpilomabtha001@gmail.com
+                </a></small><br>
+                <a href="tel:+27824247563">
+                    Phone Number: +27824247563
+                </a>
+            </div>
+            <div class="footer-content">
+                <h4>Quick Links</h4>
+                <a href="https://github.com/Mpilo3">
+                    <img src="image/github-icon.png" width="10" height="10">
+                    Github
+                </a><br>
+                <a href="www.linkedin.com/in/celimpilo-mbatha-692878376">
+                    <img src="image/Linkedin-icon.png" width="10" height="10">
+                    LinkedIn
+                </a><br>
+            </div>
         </div>
-        <div class="socials">
-            My Socials<br>
-            <a href="https://github.com/Mpilo3">Github</a><br>
-            <a href="www.linkedin.com/in/celimpilo-mbatha-692878376">LinkedIn</a>
-        </div>
-        <div>
-            <p>&copy; Celimpilo's Portfolio. All Rights Reserved</p>
-        </div>
+            &copy; copyright registered.
+            Author : Celimpilo Mbatha.
+        
     </footer>
 </body>
 </html>

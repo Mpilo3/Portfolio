@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 10px;
+    min-height: auto;
+    background: linear-gradient(45deg,#1F2C33);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+}
+form {
+     text-align: center;
+}
+.cont-about {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+}
+.cont-about a {
+    display: inline-flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    text-decoration: none;
+    padding: 12px;
+    margin: 2px;
+}
+.cont-about a:hover {
+    background-color: #1f3b49;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-2px);
+}
+.prof-Soc-Icon {
+    justify-items: center;
+    border: 2px;
+    width: 20%;
+}
+.icon {
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.summary-cont {
+    text-align: center;
+    text-indent: -5%;
+    justify-items: center;
+    width: 60%;
+}
+.profile-pic {
+    margin: 12px;
+    border-radius: 20px 20px;
+    box-shadow: 5px 7px rgba(27, 114, 213, 0.146);
+}
+
+#title {
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    position: static;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:#04819a6c;
+    border: solid;
+    text-align: center;
+    align-items: center;
+    backdrop-filter: blur(60%);
+    border-color: rgb(22, 60, 66);
+    border-radius: 10px 10px;
+}
+.navbar h2 {
+    padding-left: 10%;
+    color: aliceblue;
+}
+.nav-links {
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    list-style-type: none;
+}
+.nav-links li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    text-align: center;
+    padding: 14px 20px;
+}
+.nav-links li a:hover {
+    background-color: #5dd0ea6c;
+    font-size: large;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    background-color: #1F2C33;
+    min-width: 100px;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.dropdown-content li a {
+    text-align: center;
+    justify-content: center;
+}
+.dropdown-content li a:hover {
+    transition: 0.3 ease-in-out;
+    background-color: #5dd0ea6c;
+}
+.dropdown:hover .dropdown-content {
+    transition: 0.3 ease-in-out;
+    display: block;
+}
+#exp {
+    width: 60%;
+}
+
+#exp:hover {
+    cursor: pointer;
+}
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin: 1px;
+}
+h3 {
+    padding-left: 3%;
+}
+p::first-letter{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+.lang-containers {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    width: 90%;
+    margin: auto;
+    /*border: 2px solid black;*/
+    height: fit-content;
+    justify-content: center;
+    justify-items: center;
+}
+.image {
+    width: 20%;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 4px 6px rgba(7, 88, 170, 0.119);
+    font-size: smaller;
+    text-align: center;
+    margin: 10px;
+    width: 150px;
+    padding: 10px;
+}
+.lang-containers:hover .container{
+    filter: blur(2px);
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+.lang-containers:hover .container:hover {
+    filter: blur(0);
+    opacity: 1;
+    box-shadow: 4px 6px #5dd0ea6c;
+    border-color: #5dd0ea9c;
+    transition: 0.5s ease-in-out;
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+.image{
+    padding: 20px;
+}
+
+span{
+    display: block;
+    display: inline-block;
+}
+
+input{
+    width: 20%;
+    height: 30px;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+}
+input:focus{
+    border: 3px solid #5dd0ead1;
+    outline: none;
+}
+#btnsnd{
+    border: 2px solid #5dd0ea6c;
+    padding: 10px;
+    margin: 20px;
+    width: 10%;
+    color: aliceblue;
+    background-color: #04819a6c;
+    border-radius: 8px;
+}
+#btnsnd:hover {
+    border: 2px solid  #04819a6c;
+    background-color: #273841;
+    transition : 0.5s ease-in-out;
+    transform: scaleY(-2px);
+}
+footer{
+    background-color:#04819a6c;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    align-items: center;
+}
+.footer-content {
+    justify-items: center;
+    text-align: center;
+}
+.footer-content a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: block;
+    padding: 0;
+}
+.footer-content a:hover {
+    color: #5dccea;
+}
+/*Still need to study the media queries(mobile, tablet & desktop)*/
+/*The media queires for nav(hamburger turns into a dropdown content*/
+@media only screen and (min-width: 480px){
+   
+}
+@media only screen and (min-width: 500px) {
+    .hamburger {
+        display: none;
+    }
+    
+}
