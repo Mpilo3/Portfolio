@@ -64,8 +64,6 @@ form {
     font-family: Arial, Helvetica, sans-serif;
 }
 nav {
-    position: static;
-    text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color:#04819a6c;
     border: solid;
@@ -73,18 +71,14 @@ nav {
     align-items: center;
     backdrop-filter: blur(60%);
     border-color: rgb(22, 60, 66);
-    border-radius: 10px 10px;
-}
-.navbar h2 {
-    padding-left: 10%;
-    color: aliceblue;
+    border-radius: 100px;
 }
 .nav-links {
-    text-decoration: none;
     display: flex;
     text-align: center;
     padding: 20px;
     margin: 0;
+    justify-content: space-evenly;
     list-style-type: none;
 }
 .nav-links li a {
@@ -155,7 +149,6 @@ p::first-letter{
     gap: 0.2rem;
     width: 90%;
     margin: auto;
-    /*border: 2px solid black;*/
     height: fit-content;
     justify-content: center;
     justify-items: center;
@@ -214,10 +207,9 @@ input:focus{
     border: 2px solid #5dd0ea6c;
     padding: 10px;
     margin: 20px;
-    width: 10%;
     color: aliceblue;
     background-color: #04819a6c;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 #btnsnd:hover {
     border: 2px solid  #04819a6c;
@@ -257,8 +249,5 @@ footer{
    
 }
 @media only screen and (min-width: 500px) {
-    .hamburger {
-        display: none;
-    }
     
 }
