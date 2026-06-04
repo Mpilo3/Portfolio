@@ -245,9 +245,32 @@ footer{
 }
 /*Still need to study the media queries(mobile, tablet & desktop)*/
 /*The media queires for nav(hamburger turns into a dropdown content*/
-@media only screen and (min-width: 480px){
-   
-}
-@media only screen and (min-width: 500px) {
-    
+@media only screen and (max-width: 600px) {
+    .cont-about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .prof-Soc-Icon, .summary-cont {
+        width: 100%;
+    }
+    .profile-pic {
+        height: 160px;
+        margin: 5px auto;
+    }
+    .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px; 
+        margin-bottom: 15px;
+    }
+    .summary-cont p {
+        font-size: 14px;
+        line-height: 1.5;
+        text-indent: 0; 
+        padding: 0 10px;
+    }
+    p::first-letter {
+        font-size: x-large;
+    }
 }
