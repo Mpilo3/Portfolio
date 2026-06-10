@@ -245,6 +245,16 @@ footer{
 }
 
 @media only screen and (max-width: 600px) {
+    .nav-links li a {
+    color: aliceblue;
+    font-size: small;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    text-align: center;
+    padding: 10px 15px;
+    }
+
     .cont-about {
         flex-direction: column;
         text-align: center;
