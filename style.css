@@ -246,12 +246,12 @@ footer{
 
 @media only screen and (max-width: 600px) {
     input{
-    width: 50%;
+    width: 60px;
     height: 30px;
     outline: none;
     border-radius: 10px;
     text-align: center;
-}
+    }
     .footer-content a {
     color: aliceblue;
     text-decoration: none;
@@ -261,7 +261,7 @@ footer{
     text-align: center;
     display: block;
     padding: 0;
-}
+    }
     .cont-about {
         flex-direction: column;
         text-align: center;
