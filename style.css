@@ -245,14 +245,21 @@ footer{
 }
 
 @media only screen and (max-width: 600px) {
-    
-    .footer{
-    display: flex;
-    justify-items: center;
-    justify-content: space-evenly;
-    margin-top: 20px;
+    input{
+    width: 20%;
+    height: 30px;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+}
+    .footer-content a {
+    color: aliceblue;
+    text-decoration: none;
     font-size: smaller;
-    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: block;
+    padding: 0;
 }
     .cont-about {
         flex-direction: column;
