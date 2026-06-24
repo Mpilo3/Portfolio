@@ -38,7 +38,7 @@ form {
     transition: 0.3s ease-in-out;
     transform: translateY(-2px);
 }
-.prof-Soc-Icon {
+.prof-soc-icon {
     justify-items: center;
     border: 2px;
     width: 20%;
@@ -135,10 +135,14 @@ h2 {
     text-align: left;
     margin: 1px;
 }
-h3 {
+.h3 {
     padding-left: 3%;
+    background-color: #1f3b49;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
 }
-p::first-letter{
+.summary-cont p::first-letter{
     font-family: 'Courier New', Courier, monospace;
     font-size: xx-large;
 }
@@ -191,7 +195,72 @@ span{
     display: block;
     display: inline-block;
 }
+/*Edtiting the projects section*/
+.projects {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 4px 6px rgba(7, 88, 170, 0.119);
+    font-size: smaller;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    height: fit-content;
+    width: 250px;
+    padding: 10px;
+}
+.projects a {
+    color: #ffff;
+    text-decoration: none;
+}
+.proj-links {
+    padding: 2%;
+}
+.proj-links ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.proj-links:hover {
+    background-color: #1f3b49;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+.proj-links ul img {
+    margin: 2px;
+    vertical-align: middle;
+}
+.proj-cont img {
+    border-radius: 10px;
+    margin: 10px;
+    width: 180px;
+    height: 180px;
+}
+.lang-used {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+.lang-used:hover{
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    background-color: #1f3b49;
+}
+.contact-form-cont {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+.contact-form {
+    width: 50%;
+    background-color: #273841;
+    box-shadow: 4px 6px rgba(7, 88, 170, 0.119);
+    border: 2px solid black;
+    border-radius: 20px;
 
+}
 input{
     width: 20%;
     height: 30px;
@@ -215,7 +284,6 @@ input:focus{
     border: 2px solid  #04819a6c;
     background-color: #273841;
     transition : 0.5s ease-in-out;
-    transform: scaleY(-2px);
 }
 footer{
     background-color:#04819a6c;
@@ -243,7 +311,7 @@ footer{
 .footer-content p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    font-size: x-small;
+    font-size: small;
 }
 .footer-content a:hover {
     color: #5dccea;
@@ -256,6 +324,14 @@ footer{
     outline: none;
     border-radius: 10px;
     text-align: center;
+    }
+    h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin: 1px;
+    }
+    h3 {
+    padding-left: 3%;
     }
     .nav-links li a {
     color: aliceblue;
@@ -280,7 +356,7 @@ footer{
         flex-direction: column;
         text-align: center;
     }
-    .prof-Soc-Icon, .summary-cont {
+    .prof-soc-icon, .summary-cont {
         width: 100%;
     }
     .profile-pic {
@@ -295,12 +371,12 @@ footer{
         margin-bottom: 15px;
     }
     .summary-cont p {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.5;
         text-indent: 0; 
         padding: 0 10px;
     }
-    p::first-letter {
+    .summary-cont p::first-letter {
         font-size: x-large;
     }
 }
@@ -317,7 +393,7 @@ footer{
     color: aliceblue;
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: xx-small;
+    font-size: small;
     display: flex;
     text-align: center;
     padding: 14px 20px;
@@ -332,4 +408,7 @@ footer{
     display: block;
     padding: 0;
     }
+    .summary-cont p::first-letter{
+    font-family: 'Courier New', Courier, monospace;
+}
 }
